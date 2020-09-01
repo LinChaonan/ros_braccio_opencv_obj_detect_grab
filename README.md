@@ -46,12 +46,12 @@ Launch the RViz model visualizer and the OpenCV object detection algorithm.
 ```
 cd braccio_opencv_ws
 source devel/setup.bash
-roslaunch ros_braccio_opencv_obj_detect_grab demo.launch start_detect:=true
+roslaunch ros_braccio_opencv_obj_detect_grab demo.launch start_detection:=true
 ```
 
 The above command doesn't connect to the .  If you want to actually drive the Braccio arm make sure it is connected by USB and add `connect_braccio:=true` like so:
 ```
-roslaunch ros_braccio_opencv_obj_detect_grab demo.launch start_detect:=true connect_braccio:=true
+roslaunch ros_braccio_opencv_obj_detect_grab demo.launch start_detection:=true connect_braccio:=true
 ```
 
 ### 4. Launch the interactive script
